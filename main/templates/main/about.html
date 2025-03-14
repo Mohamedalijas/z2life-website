@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <title>About Us - Z2Life</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static 'images/logo.png' %}" alt="Z2Life Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'courses' %}">Courses</a></li>
+                <li><a href="{% url 'tutors' %}">Tutors</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-us">
+        <h2>About Z2Life</h2>
+        <p>Z2Life is a platform dedicated to providing free IT training to aspiring developers and tech enthusiasts. Founded in 2023, our mission is to bridge the gap between education and industry by offering hands-on training and career support.</p>
+        <p>Our team of experienced tutors is passionate about teaching and helping students achieve their goals. Whether you're a beginner or an experienced coder, Z2Life has something for everyone.</p>
+    </section>
+
+    <section class="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-member">
+            <img src="{% static 'images/tutor1.jpg' %}" alt="Navin">
+            <h3>Navin</h3>
+            <p>Java Programming Expert</p>
+        </div>
+        <div class="team-member">
+            <img src="{% static 'images/tutor2.jpg' %}" alt="Rishikesh">
+            <h3>Rishikesh</h3>
+            <p>Automation & Manual Testing Specialist</p>
+        </div>
+        <div class="team-member">
+            <img src="{% static 'images/tutor3.jpg' %}" alt="Mohamed Alijas">
+            <h3>Mohamed Alijas</h3>
+            <p>Python Expert | CEO of Z2Life</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Z2Life. All rights reserved.</p>
+    </footer>
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>
